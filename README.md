@@ -1,12 +1,11 @@
 # Credit
 
-Fork of [https://github.com/qlaffont/fortnite-api](https://github.com/qlaffont/fortnite-api)
+Fork of [https://github.com/qlaffont/fortnite-api](https://github.com/qlaffont/fortnite-api) from 2.9.0.
+Full credit for work previous to 2.9.1 to https://github.com/qlaffont/
 
 # Fortnite-API-Fortnite Rank
 
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
-
-A simple to use module for interacting with Fortnite API. Inspiration from Jake-Ruston and Xilixir packages.
 
 **⚠ WARNING ⚠** : This library is _only for Node.JS_ application.
 
