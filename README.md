@@ -8,9 +8,6 @@ Fork of [https://github.com/qlaffont/fortnite-api](https://github.com/qlaffont/f
 
 A simple to use module for interacting with Fortnite API. Inspiration from Jake-Ruston and Xilixir packages.
 
-Support:
-You can support me with a donation : [Paypal Donation](https://www.paypal.me/qlaffont)
-
 **⚠ WARNING ⚠** : This library is _only for Node.JS_ application.
 
 ## Install
@@ -311,28 +308,6 @@ fortniteAPI.login().then(() => {
         .checkFortniteStatus()
         .then(status => {
             console.log(status);
-        })
-        .catch(err => {
-            console.log(err);
-        });
-});
-```
-
-```js
-true;
-```
-
-*   getFortnitePVEInfo(lang) : `Promise` with `Array` Return
-
-Get Fortnite PVE Info (storm, etc)
-lang => FR/EN
-
-```js
-fortniteAPI.login().then(() => {
-    fortniteAPI
-        .getFortnitePVEInfo("fr")
-        .then(pveInfo => {
-            console.log(pveInfo);
         })
         .catch(err => {
             console.log(err);
