@@ -13,7 +13,7 @@ Full credit for work previous to 2.9.1 to https://github.com/qlaffont/
 ## Install
 
 ```
-$ npm install fortnite-api
+$ npm install fortnite-api-fortniterank
 ```
 
 ## API
