@@ -1,6 +1,7 @@
 # Credit
 
 Fork of [https://github.com/qlaffont/fortnite-api](https://github.com/qlaffont/fortnite-api) from 2.9.0.
+
 Full credit for work previous to 2.9.1 to https://github.com/qlaffont/
 
 # Fortnite-API-Fortnite Rank
