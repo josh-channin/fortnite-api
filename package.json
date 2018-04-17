@@ -1,21 +1,21 @@
 {
-    "name": "fortnite-api",
-    "version": "2.9.0",
-    "description": "Fortnite API",
+    "name": "fortnite-api-fortniterank",
+    "version": "2.9.1",
+    "description": "Fortnite API FortniteRank",
     "main": "index.js",
     "scripts": {
         "test": "node test.js"
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/qlaffont/fortnite-api"
+        "url": "git+https://github.com/josh-channin/fortnite-api-fortniterank"
     },
-    "author": "Quentin Laffont",
+    "author": "Josh Channin & Quentin Laffont",
     "license": "MIT",
     "bugs": {
-        "url": "https://github.com/Jake-Ruston/fortnite/issues"
+        "url": "https://github.com/josh-channin/fortnite-api-fortniterank/issues"
     },
-    "homepage": "https://github.com/Jake-Ruston/fortnite#readme",
+    "homepage": "https://github.com/josh-channin/fortnite-api-fortniterank#readme",
     "dependencies": {
         "request": "^2.85.0",
         "request-promise": "^4.2.2"
