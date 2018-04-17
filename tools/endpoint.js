@@ -26,6 +26,13 @@ module.exports = {
             "/bulk/window/alltime"
         );
     },
+    statsBR_weekly: accountId => {
+        return (
+            "https://fortnite-public-service-prod11.ol.epicgames.com/fortnite/api/stats/accountId/" +
+            accountId +
+            "/bulk/window/weekly"
+        );
+    },
     statsPVE: accountId => {
         return (
             "https://fortnite-public-service-prod11.ol.epicgames.com/fortnite/api/game/v2/profile/" +

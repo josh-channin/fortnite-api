@@ -295,6 +295,51 @@ class FortniteApi {
         });
     }
 
+    getStatsBRFromID_weekly(id, platform) {
+        return new Promise((resolve, reject) => {
+            if (!id || !platform) {
+                reject("Please precise id and platform");
+            }
+
+            if (!(platform == "pc" || platform == "ps4" || platform == "xb1")) {
+                reject("Please precise a good platform: ps4/xb1/pc");
+            }
+
+            request({
+                url: EndPoint.statsBR_weekly(id),
+                headers: {
+                    Authorization: "bearer " + this.access_token
+                },
+                method: "GET",
+                json: true
+            })
+                .then(stats => {
+                    if (
+                        Stats.checkPlatform(
+                            stats,
+                            platform.toLowerCase() || "pc"
+                        )
+                    ) {
+                        Stats.convert(
+                            stats,
+                            { id: id, username: "No Username" },
+                            platform.toLowerCase()
+                        ).then(resultStats => {
+                            resolve(resultStats);
+                        });
+                    } else {
+                        reject(
+                            "Impossible to fetch User. User not found on this platform"
+                        );
+                    }
+                })
+                .catch(err => {
+                    this.debug && console.log(err);
+                    reject("Impossible to fetch User.");
+                });
+        });
+    }
+
     getFortniteNews(lang) {
         return new Promise((resolve, reject) => {
             let headers = {};
